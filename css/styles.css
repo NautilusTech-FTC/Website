@@ -1,0 +1,39 @@
+body {
+  color: black;
+}
+
+h1 {
+  font-family: "Orbitron";
+}
+
+header {
+  background-color: #0c2340;
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: right;
+  border-width: 5px;
+  border-style: outset;
+  border-color: #ff6a13;
+}
+
+body {
+  margin: 0;
+}
+
+#ddd {
+  display: none;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #ff6a13;
+}
+
+a:active {
+  color: green;
+}
