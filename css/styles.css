@@ -26,9 +26,11 @@ body {
   display: none;
 }
 
+/* idk. I don't like my links white
 a {
   color: white;
 }
+*/
 
 a:hover {
   color: #ff6a13;
