@@ -1,0 +1,189 @@
+/*Color setup*/
+:root {
+  --NTorange: #ff6a13;
+  --NTnavy: #0c2340;
+  --NTroyal: #0056b8;
+}
+
+/*General styling*/
+a {
+  color: white;
+  font-family: nunito;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: orbitron;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: orbitron;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-family: nunito;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+h4 {
+  font-family: nunito;
+}
+
+p {
+  font-family: nunito;
+}
+
+button {
+  background: var(--NTnavy);
+  border: none;
+  color: white;
+  font-family: nunito;
+  font-size: 16px;
+}
+
+#warning {
+  color: red;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  position: sticky;
+  top: 30px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--NTroyal);
+  text-align: center;
+  width: 10%;
+  height: auto;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+li a {
+  font-family: orbitron;
+  padding: 8px 16px;
+  display: block;
+}
+
+/*Nav bar styling*/
+nav {
+  background-color: var(--NTnavy);
+  width: auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 14.5% 14% 14.5% 14% 14.5% 14% 14.5%;
+}
+
+.navOpts {
+  display: none;
+  z-index: 1;
+}
+
+.navHead:hover + .navOpts {
+  display: block;
+}
+
+.navOpts:hover {
+  display: block;
+}
+
+/*Home page styling*/
+#homePicture {
+  text-align: center;
+}
+
+#homeExploration {
+  width: 50%;
+  background-color: var(--NTroyal);
+  float: left;
+  text-align: center;
+  padding: 15px;
+}
+
+#homeImpact {
+  width: 50%;
+  background-color: var(--NTorange);
+  float: left;
+  text-align: center;
+  padding: 15px;
+}
+
+#homeStory {
+  width: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+#explorationImpact {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Footer styling*/
+footer {
+  background-color: var(--NTnavy);
+  padding: 15px;
+  color: white;
+}
+
+/*Members page styling*/
+.teamMember p {
+  text-indent: 50px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.teamMember h2 {
+  text-align: center;
+}
+
+.teamMember h3 {
+  text-align: center;
+}
+
+.teamMember {
+  padding: 10px;
+}
+
+#memberDiv {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+/*Season page styling*/
+
+#teamsNames {
+  display: grid;
+  grid-template-columns: 18% 7% 18% 7% 18% 7%;
+  column-gap: 5%;
+}
+
+#number {
+  text-align: right;
+}
+
+#name {
+  text-align: left;
+}
+
+/*History styling*/
+
+#history {
+  display: flex;
+  align-items: flex-start;
+}
