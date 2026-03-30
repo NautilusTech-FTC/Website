@@ -187,3 +187,8 @@ footer {
   display: flex;
   align-items: flex-start;
 }
+
+#highScore {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
