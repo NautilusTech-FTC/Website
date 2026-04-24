@@ -20,37 +20,34 @@
     <title>Our Robot - NautilusTech 23139</title>
   </head>
   <body id="top">
-    <nav>
-      <!---TODO: replace with logo-->
-      <div id="navHome">
-        <a href="index.html" id="navLink">Home</a>
-      </div>
-      <p></p>
+    <nav class="topNav">
+      <a href="index.html" id="navLink">Home</a>
+
       <div class="navDrop">
-        <div class="navHead" id="navExpHead">
+        <div class="navHead">
           <a>Exploration&#9662;</a>
         </div>
-        <div class="navOpts" id="navExpOpts">
+        <div class="navOpts">
           <a href="robot.html"><u>Our Robot</u></a
           ><br />
           <a href="experts.html">Learning from Experts</a><br />
           <a href="experiments.html">Experiments</a>
         </div>
       </div>
-      <p></p>
+
       <div class="navDrop">
-        <div class="navHead" id="navImpHead"><a>Impact&#9662;</a></div>
-        <div class="navOpts" id="navImpOpts">
+        <div class="navHead"><a>Impact&#9662;</a></div>
+        <div class="navOpts">
           <a href="events.html">Events</a><br />
           <a href="tutorials.html">Tutorials</a><br />
           <a href="resources.html">More Resources</a><br />
           <a href="outreach.html">Past Outreach</a>
         </div>
       </div>
-      <p></p>
+
       <div class="navDrop">
-        <div class="navHead" id="navStoHead"><a>Story&#9662;</a></div>
-        <div class="navOpts" id="navStoOpts">
+        <div class="navHead"><a>Story&#9662;</a></div>
+        <div class="navOpts">
           <a href="members.html">Members</a><br />
           <a href="season.html">This Year&apos;s Season</a><br />
           <a href="history.html">Team History</a><br />
@@ -58,9 +55,11 @@
         </div>
       </div>
     </nav>
-    <div class="headingPhoto" id="robotHeading">
+
+    <div class="headingPhoto">
       <h1>Our Decode Robot: The Aronnax</h1>
     </div>
+
     <p id="warning">
       THIS PAGE IS STILL UNDER CONSTRUCTION Please be forgiving of wonky
       formatting and the pages which do not have all the information they need.
@@ -95,20 +94,36 @@
       </div>
 
       <div class="pageContent">
-        <div class="subInfoTrueSize">
+        <div class="subInfoTrueSize" id="overview">
           <div class="scroll">
             <div class="curveCutOff">
               <div class="subInfoText">
-                <h2 id="overview">Overview</h2>
+                <h2>Overview</h2>
+                <p>
+                  Our robot design utilizes a rubber band roller in the front to
+                  intake balls up a ramp into the robot. The balls are then
+                  stored along a curved wall to maximize space and store up to 3
+                  balls. A “spoon” under the ball in the shooter chamber then
+                  lifts it into our shooter, which is able to consistently shoot
+                  balls into the goals from the near and far launch zone.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="subInfoTrueSize">
+        <div class="subInfoTrueSize" id="strategy">
           <div class="scroll">
             <div class="curveCutOff">
               <div class="subInfoText">
-                <h2 id="strategy">Strategy</h2>
+                <h2>Strategy</h2>
+                <p>
+                  Our strategy this year was to shoot from the far triangle from
+                  the beginning, as we knew that most teams would not try it.
+                  <br />
+                  <br />
+                  This information is not complete, check back soon for new
+                  updates!
+                </p>
               </div>
             </div>
           </div>
@@ -116,49 +131,104 @@
         <div class="headingWithSubheadings">
           <h2 id="subsystems">Subsystems</h2>
           <div class="threeColumnSubInfo">
-            <div class="subInfoTrueSize">
+            <div class="subInfoTrueSize" id="intake">
               <div class="scroll">
                 <div class="curveCutOff">
                   <div class="subInfoText">
-                    <h3 id="intake">Intake</h3>
+                    <h3>Intake</h3>
+                    <p>
+                      This information is not complete, check back soon for new
+                      updates!
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="subInfoTrueSize">
+            <div class="subInfoTrueSize" id="transfer">
               <div class="scroll">
                 <div class="curveCutOff">
                   <div class="subInfoText">
-                    <h3 id="transfer">Transfer</h3>
+                    <h3>Transfer</h3>
+                    <p>
+                      Our robot features a curved wall to transport the balls
+                      from the intake to the shooter. This design was created to
+                      maximize the space available on the robot. We found that
+                      storing the balls flat would take up too much space, so
+                      curving it allowed us to use the middle for other
+                      components. The curved design also enabled us to move all
+                      the balls at once using a single servo with flexible
+                      flaps. We also implemented a removable wall, the wall
+                      completely detaches from the base, giving us easy access
+                      to some wiring.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="subInfoTrueSize">
+            <div class="subInfoTrueSize" id="shooter">
               <div class="scroll">
                 <div class="curveCutOff">
                   <div class="subInfoText">
-                    <h3 id="shooter">Shooter</h3>
+                    <h3>Shooter</h3>
+                    <p>
+                      This information is not complete, check back soon for new
+                      updates!
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="subInfoTrueSize">
+            <div class="subInfoTrueSize" id="sensors">
               <div class="scroll">
                 <div class="curveCutOff">
                   <div class="subInfoText">
-                    <h3 id="sensors">Sensors, Camera, & Lights</h3>
+                    <h3>Sensors, Camera, & Lights</h3>
+                    <p>
+                      Whether it be for shooting, aiming, intaking or moving, we
+                      use sensors for everything.
+                    </p>
+                    <p>
+                      For aiming, we used our own localizer, which evolved over
+                      the course of the season. Initially starting out as purely
+                      camera input, we've slowly started evolving more data
+                      sources into it, starting with the IMU, and at the end we
+                      used Pinpoint to locate our robot during tele-op. This
+                      system has fail safes, so if we get knocked and our
+                      dead-wheels lose track, we can just use our camera to
+                      recalibrate them and get right back to aiming perfectly.
+                      We then take this IMU data and do some computations with
+                      it, so that we can calculate the perfect heading while
+                      still accounting for our offset shooter.
+                    </p>
+                    <p>
+                      We also have other sensors that are used during the game,
+                      like a color sensor, that just toggles one of our lights
+                      to light up in the color of the ball that’s currently in
+                      the shooter. This allows the drivers to quickly tell what
+                      ball we are about to shoot.
+                    </p>
+                    <p>
+                      One of our most important sensors though, is the encoder
+                      of our shooter motor. This allows us to use PIDF to shoot
+                      with accuracy every single time. Without this, our shots
+                      would be inconsistent, and take forever to get back up to
+                      speed.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="subInfoTrueSize">
+        <div class="subInfoTrueSize" id="autonomous">
           <div class="scroll">
             <div class="curveCutOff">
               <div class="subInfoText">
-                <h2 id="autonomous">Autonomous</h2>
+                <h2>Autonomous</h2>
+                <p>
+                  This information is not complete, check back soon for new
+                  updates!
+                </p>
               </div>
             </div>
           </div>
@@ -166,35 +236,126 @@
         <div class="headingWithSubheadings">
           <h2 id="highScoresEtc">High Score & Best Matches</h2>
           <div class="threeColumnSubInfo">
-            <div class="subInfoTrueSize">
+            <div class="subInfoTrueSize" id="highScores">
               <div class="scroll">
                 <div class="curveCutOff">
                   <div class="subInfoText">
-                    <h3 id="highScores">High Scores</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="subInfoTrueSize">
-              <div class="scroll">
-                <div class="curveCutOff">
-                  <div class="subInfoText">
-                    <h3 id="bestMatches">Best Matches</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="subInfoTrueSize">
-              <div class="scroll">
-                <div class="curveCutOff">
-                  <div class="subInfoText">
-                    <h3 id="thanks">Thank You</h3>
+                    <h3>High Scores</h3>
                     <p>
-                      Thank you to all our alliance partners this season,
-                      especially Over-Caffinated Engineers and High Voltage for
-                      choosing us for their playoff matches, and EMP for the
-                      great playoffs at Spark.
+                      We had many great matches throughout the season, but some
+                      have stood out at their meets as truly amazing. Our
+                      highest scores at each meet are special to us, so we would
+                      like to present them here to help celebrate and thank our
+                      amazing alliance partners.
                     </p>
+
+                    <ol>
+                      <li>
+                        Scrimmage: 60 points in Q4 with 26407 Over-Caffinated
+                        Engineers
+                      </li>
+                      <li>
+                        Meet 1: 173 points in Q26 with 12808 RevAmped Robotics
+                      </li>
+                      <li>
+                        Meet 2: 192 points in Q12 with 12808 RevAmped Robotics
+                      </li>
+                      <li>Meet 3: 144 points in Q25 with 19439 Disconnect</li>
+                      <li>
+                        League Tournament Qualifiers: 222 points in Q15 with
+                        12808 RevAmped Robotics
+                      </li>
+                      <li>
+                        League Tournament Playoffs: 187 points in M1 with our
+                        alliance partner 26407 Over-Caffinated Engineers
+                      </li>
+                      <li>
+                        Spark Invitational Qualifiers: 159 points in Q41 with
+                        24261 S.O.S.
+                      </li>
+                      <li>
+                        Spark Invitational Playoffs: 215 points in M3 with our
+                        alliance partner 267 EMP
+                      </li>
+                      <li>
+                        Oregon State Championship Qualifiers: 243 points in Q37
+                        with 8188 Rivets
+                      </li>
+                      <li>
+                        Oregon State Championship Playoffs: 260 points in M4
+                        with our alliance partner 18108 High Voltage
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="subInfoTrueSize" id="bestMatches">
+              <div class="scroll">
+                <div class="curveCutOff">
+                  <div class="subInfoText">
+                    <h3>Best Matches</h3>
+                    <p>
+                      While our highest scoring matches do stand out as great,
+                      there are other matches that, while not as high scoring,
+                      we would still love to celebrate and extend thanks to our
+                      alliance partners in them. Weather it was a system on our
+                      robot coming in handy for the first time, great strategy
+                      with our teamate, or winning against the odds, these
+                      matches are just as special to us as our highest scoring
+                      ones.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="subInfoTrueSize" id="thanks">
+              <div class="scroll">
+                <div class="curveCutOff">
+                  <div class="subInfoText">
+                    <h3>Thank You</h3>
+                    <p>
+                      Every match this season, from the disappointing losses to
+                      the typical matches to the invigorating wins, helps us
+                      acheive our goals and expand our knowledge. While we do
+                      like to call out our best and coolest matches, we still
+                      think it's important to thank all of our alliance partners
+                      and the teams in the Silicon Forest League for giving us
+                      the chance to compete this season, and at all. To every
+                      one of our alliance partners this season, thank you.
+                      <br />
+                      <br />
+                      Our alliance partners we'd like to thank this season
+                      (which means all of them):
+                    </p>
+                    <ol>
+                      <li>26407 Over-Caffinated Engineers</li>
+                      <li>750 Gears in Motion</li>
+                      <li>12000 The Swagletons</li>
+                      <li>20760 Hawkbot1cs</li>
+                      <li>19439 Disconnect</li>
+                      <li>23299 Ground Control</li>
+                      <li>4097 The Pac Bots</li>
+                      <li>25952 Beyond Tech</li>
+                      <li>25631 Proxima Nova</li>
+                      <li>12808 RevAmped Robotics</li>
+                      <li>3058 Live Wire</li>
+                      <li>4239 Viridescent Vipers</li>
+                      <li>28823 Associated Documentationist</li>
+                      <li>30705 Techno Sharks</li>
+                      <li>11556 Valley Catholic Robotics</li>
+                      <li>33744 Syntax Terror</li>
+                      <li>31744 T.R.O.U.T</li>
+                      <li>8132 Sprockets</li>
+                      <li>24261 S.O.S. (Scholars of STEAM)</li>
+                      <li>267 EMP</li>
+                      <li>15241 Leo</li>
+                      <li>13784 Lightning</li>
+                      <li>18108 High Voltage</li>
+                      <li>10332 Technical Difficulties</li>
+                      <li>13189 Scorpio</li>
+                      <li>8188 Rivets</li>
+                    </ol>
                   </div>
                 </div>
               </div>
