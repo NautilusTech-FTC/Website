@@ -208,3 +208,7 @@ footer h4 {
   grid-template-columns: auto minmax(0, 1fr);
   column-gap: 1%;
 }
+
+.leftAlign {
+  text-align: left;
+}
