@@ -152,6 +152,10 @@ img {
   text-align: left;
 }
 
+.navHead {
+  margin-top: 10px;
+}
+
 .navHead:hover + .navOpts {
   display: block;
 }
@@ -160,16 +164,34 @@ img {
   display: block;
 }
 
+.navHead a {
+  font-family: Orbitron, serif;
+}
+
+.navHead a:hover {
+  font-weight: normal;
+}
+
 /*Footer styling*/
 footer {
   background-color: var(--NTroyal);
   padding: 15px;
   color: white;
   text-align: left;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
 footer h4 {
   text-align: left;
+}
+
+.homeCardLink {
+  color: black;
+}
+
+.homeCardLink:hover {
+  font-weight: normal;
 }
 
 /*Members page styling*/
@@ -278,6 +300,15 @@ footer h4 {
 
 .leftAlign {
   text-align: left;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+.listHeading {
+  text-align: left;
+  margin-left: 15px;
 }
 
 #dummy {
