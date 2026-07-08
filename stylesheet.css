@@ -1,11 +1,9 @@
-/*Color setup*/
 :root {
   --NTorange: #ff6a13;
   --NTnavy: #0c2340;
   --NTroyal: #0056b8;
 }
 
-/*General styling*/
 body {
   background-color: var(--NTnavy);
   padding: 10px;
@@ -27,7 +25,6 @@ h1 {
   text-align: center;
   margin-bottom: 5px;
   color: white;
-  font-size: 3em;
   font-size: 5em;
 }
 
@@ -118,6 +115,7 @@ img {
   overflow: hidden;
   position: relative;
   margin-bottom: 40px;
+  background-color: var(--NTorange);
 }
 
 .pageHeading {
@@ -136,7 +134,6 @@ img {
   position: relative;
 }
 
-/*Nav bar styling*/
 .topNav {
   background-color: var(--NTroyal);
   width: auto;
@@ -146,9 +143,25 @@ img {
   column-gap: 14%;
 }
 
+.navOpts ul {
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.navOpts li {
+  margin-left: 0px;
+}
+
+.navOpts li a {
+  font-family: nunito, sans-serif;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .navOpts {
   display: none;
-  z-index: 1;
   text-align: left;
 }
 
@@ -170,6 +183,10 @@ img {
 
 .navHead a:hover {
   font-weight: normal;
+}
+
+.sideNav .navHead a:hover {
+  font-weight: bold;
 }
 
 /*Footer styling*/
@@ -313,4 +330,37 @@ footer h4 {
 
 #dummy {
   visibility: hidden;
+}
+
+.topBanner {
+  background-color: var(--NTorange);
+  width: auto;
+  padding: 5px;
+  border-radius: 50px 10px 0px 0px;
+}
+
+.topBanner h3 {
+  margin: 0px;
+}
+
+/*MOBILE/TINY SCREEN FRIENDLY*/
+@media screen and (max-width: 1000px) {
+  .threeColumnSubInfo {
+    grid-template-columns: 100%;
+    grid-column-gap: 0%;
+    margin-bottom: 60px;
+  }
+
+  #dummy {
+    display: none;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .navHead a {
+    pointer-events: none;
+    font-weight: normal;
+  }
 }
