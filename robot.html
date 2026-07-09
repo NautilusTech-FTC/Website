@@ -22,18 +22,23 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" type="image/x-icon" href="images/NautilusTech_logo.png" />
+    <link rel="icon" type="image/x-icon" href="images/fallback/NautilusTech_logo.png" />
 
     <title>Our Robot - NautilusTech 23139</title>
   </head>
   <body id="top">
     <nav class="topNav">
-      <a href="index.html"
-        ><img
-          src="images/NautilusTech_logo.png"
+      <a href="index.html">
+        <picture>
+	        <source srcset="images/first/NautilusTech_logo.avif" type="image/avif"/>
+	        <source srcset="images/second/NautilusTech_logo.webp" type="image/webp"/>
+	        <img
+          src="images/fallback/NautilusTech_logo.png"
           alt="NautliusTech logo"
           style="height: 42px; width: 50px; border-radius: 10px 2px"
-      /></a>
+          />
+        </picture>
+      </a>
 
       <div class="navDrop">
         <div class="navHead">
@@ -81,7 +86,11 @@
     </nav>
 
     <div class="headingPhoto">
-      <img src="images/aronnax.jpeg" alt="NautilusTech DECODE season robot" />
+      <picture>
+        <source srcset="images/first/aronnax.avif" type="image/avif"/>
+        <source srcset="images/second/aronnax.webp" type="image/webp"/>
+        <img src="images/fallback/aronnax.jpeg" alt="NautilusTech DECODE season robot" />
+      </picture>
       <h1 class="pageHeading">Our Decode Robot: The Aronnax</h1>
     </div>
 
@@ -406,8 +415,11 @@
         </p>
       </div>
       <div>
-        <img
-          src="images/NautilusTech_logo.png"
+        <picture>
+          <source srcset="images/first/NautilusTech_logo.avif" type="image/avif"/>
+          <source srcset="images/second/NautilusTech_logo.webp" type="image/webp"/>
+          <img
+          src="images/fallback/NautilusTech_logo.png"
           alt="NautilusTech logo"
           style="
             height: 100px;
@@ -415,7 +427,8 @@
             justify-self: center;
             border-radius: 20px 2px;
           "
-        />
+          />
+        </picture>
       </div>
       <div class="rightAlign">
         <h4 class="rightAlign">Last Updated:</h4>

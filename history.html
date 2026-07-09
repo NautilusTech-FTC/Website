@@ -21,18 +21,23 @@
       rel="stylesheet"
     />
 
-    <link rel="icon" type="image/x-icon" href="images/NautilusTech_logo.png" />
+    <link rel="icon" type="image/x-icon" href="images/fallback/NautilusTech_logo.png" />
 
     <title>Team History - NautilusTech 23139</title>
   </head>
   <body id="top">
     <nav class="topNav">
-      <a href="index.html"
-        ><img
-          src="images/NautilusTech_logo.png"
+      <a href="index.html">
+        <picture>
+	        <source srcset="images/first/NautilusTech_logo.avif" type="image/avif"/>
+	        <source srcset="images/second/NautilusTech_logo.webp" type="image/webp"/>
+	        <img
+          src="images/fallback/NautilusTech_logo.png"
           alt="NautliusTech logo"
           style="height: 42px; width: 50px; border-radius: 10px 2px"
-      /></a>
+          />
+        </picture>
+      </a>
 
       <div class="navDrop">
         <div class="navHead">
@@ -80,11 +85,15 @@
     </nav>
 
     <div class="headingPhoto">
-      <img
-        src="images/us_and_high_voltage.jpeg"
-        alt="NautilusTech and High Voltage members standing together with semi-finalist alliance trophies"
-        style="object-position: center 40%"
-      />
+      <picture>
+        <source srcset="images/first/us_and_high_voltage.avif" type="image/avif"/>
+        <source srcset="images/second/us_and_high_voltage.webp" type="image/webp"/>
+        <img
+          src="images/fallback/us_and_high_voltage.jpeg"
+          alt="NautilusTech and High Voltage members standing together with semi-finalist alliance trophies"
+          style="object-position: center 40%"
+        />
+      </picture>
       <h1 class="pageHeading">Team History</h1>
     </div>
 
@@ -104,10 +113,14 @@
             <div class="curveCutOff">
               <div class="subInfoText">
                 <div class="subInfoImage">
-                  <img
-                    src="images/decode_robot_with_awards.jpeg"
-                    alt="NautilusTech Decode robot with engineering portfolio, awards from the Spark Invitational, awards from the state championship, and game elements"
-                  />
+                  <picture>
+                    <source srcset="images/first/decode_robot_with_awards.avif" type="image/avif"/>
+                    <source srcset="images/second/decode_robot_with_awards.webp" type="image/webp"/>
+                    <img
+                      src="images/fallback/decode_robot_with_awards.jpeg"
+                      alt="NautilusTech Decode robot with engineering portfolio, awards from the Spark Invitational, awards from the state championship, and game elements"
+                    />
+                  </picture>
                 </div>
                 <h2>Decode Season</h2>
                 <p>
@@ -123,11 +136,15 @@
             <div class="curveCutOff">
               <div class="subInfoText">
                 <div class="subInfoImage">
-                  <img
-                    src="images/into_the_deep_think.jpeg"
-                    alt="Young Engineers (former name of NautilusTech) members standing with 2nd place think award certificate"
-                    style="object-position: center 20%"
-                  />
+                  <picture>
+                    <source srcset="images/first/into_the_deep_think.avif" type="image/avif"/>
+                    <source srcset="images/second/into_the_deep_think.webp" type="image/webp"/>
+                    <img
+                      src="images/fallback/into_the_deep_think.jpeg"
+                      alt="Young Engineers (former name of NautilusTech) members standing with 2nd place think award certificate"
+                      style="object-position: center 20%"
+                    />
+                  </picture>
                 </div>
                 <h2>Into the Deep Season</h2>
                 <p>
@@ -162,8 +179,11 @@
         </p>
       </div>
       <div>
-        <img
-          src="images/NautilusTech_logo.png"
+        <picture>
+          <source srcset="images/first/NautilusTech_logo.avif" type="image/avif"/>
+          <source srcset="images/second/NautilusTech_logo.webp" type="image/webp"/>
+          <img
+          src="images/fallback/NautilusTech_logo.png"
           alt="NautilusTech logo"
           style="
             height: 100px;
@@ -171,7 +191,8 @@
             justify-self: center;
             border-radius: 20px 2px;
           "
-        />
+          />
+        </picture>
       </div>
       <div class="rightAlign">
         <h4 class="rightAlign">Last Updated:</h4>
