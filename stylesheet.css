@@ -193,6 +193,23 @@ img {
   text-decoration: underline;
 }
 
+.topBanner {
+  font-size: 1.17em;
+}
+
+.topBanner a {
+  font-family: orbitron, serif;
+  margin-top: 0.83em;
+  margin-bottom: 5px;
+  text-align: center;
+  color: black;
+  text-decoration: underline;
+}
+
+.topBanner a:hover {
+  font-weight: bolder;
+}
+
 /*Footer styling*/
 footer {
   background-color: var(--NTroyal);
@@ -371,6 +388,10 @@ footer h4 {
   }
 
   h3 {
+    font-size: 2em;
+  }
+
+  .topBanner {
     font-size: 2em;
   }
 
