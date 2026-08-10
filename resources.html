@@ -32,31 +32,69 @@
   </head>
   <body id="top">
     <nav class="topNav">
-      <a href="index.html">
-        <picture>
-          <source
-            srcset="images/first/NautilusTech_logo.avif"
-            type="image/avif"
-          />
-          <source
-            srcset="images/second/NautilusTech_logo.webp"
-            type="image/webp"
-          />
-          <img
-            src="images/fallback/NautilusTech_logo.png"
-            alt="NautliusTech logo"
-            style="height: 42px; width: 50px; border-radius: 10px 2px"
-          />
-        </picture>
-      </a>
+      <div style="display: grid; grid-template-columns: 50% 50%">
+        <a href="index.html">
+          <picture>
+            <source
+              srcset="images/first/NautilusTech_logo.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="images/second/NautilusTech_logo.webp"
+              type="image/webp"
+            />
+            <img
+              src="images/fallback/NautilusTech_logo.png"
+              alt="NautliusTech logo"
+              class="topNavLogo"
+            />
+          </picture>
+        </a>
+
+        <a
+          href="javascript:void(0);"
+          class="hamburgerIcon"
+          onclick="displayNav()"
+        >
+          &#8801;
+        </a>
+
+        <script>
+          function displayNav() {
+            var headE = document.getElementById("headE");
+            var headI = document.getElementById("headI");
+            var headS = document.getElementById("headS");
+            var optsE = document.getElementById("optsE");
+            var optsI = document.getElementById("optsI");
+            var optsS = document.getElementById("optsS");
+
+            if (getComputedStyle(headE).display === "none") {
+              headE.style.display = "block";
+              headI.style.display = "block";
+              headS.style.display = "block";
+              optsE.style.display = "block";
+              optsI.style.display = "block";
+              optsS.style.display = "block";
+            } else if (getComputedStyle(headE).display === "block") {
+              headE.style.display = "none";
+              headI.style.display = "none";
+              headS.style.display = "none";
+              optsE.style.display = "none";
+              optsI.style.display = "none";
+              optsS.style.display = "none";
+            }
+          }
+        </script>
+      </div>
 
       <div class="navDrop">
-        <div class="navHead">
+        <div class="navHead" id="headE">
           <a>Exploration&#9662;</a>
         </div>
 
-        <div class="navOpts">
+        <div class="navOpts" id="optsE">
           <ul>
+            <li><a href="season.html">This Year&apos;s Season</a></li>
             <li><a href="robot.html">Our Robot</a></li>
             <li><a href="experts.html">Learning from Experts</a></li>
             <li><a href="experiments.html">Experiments</a></li>
@@ -65,31 +103,28 @@
       </div>
 
       <div class="navDrop">
-        <div class="navHead">
+        <div class="navHead" id="headI">
           <a>Impact&#9662;</a>
         </div>
 
-        <div class="navOpts">
+        <div class="navOpts" id="optsI">
           <ul>
             <li><a href="events.html">Events</a></li>
             <li><a href="tutorials.html">Tutorials</a></li>
-            <li>
-              <a class="currentPlace" href="resources.html">More Resources</a>
-            </li>
+            <li><a href="resources.html">More Resources</a></li>
             <li><a href="outreach.html">Past Outreach</a></li>
           </ul>
         </div>
       </div>
 
       <div class="navDrop">
-        <div class="navHead">
+        <div class="navHead" id="headS">
           <a>Story&#9662;</a>
         </div>
 
-        <div class="navOpts">
+        <div class="navOpts" id="optsS">
           <ul>
             <li><a href="members.html">Members</a></li>
-            <li><a href="season.html">This Year&apos;s Season</a></li>
             <li><a href="history.html">Team History</a></li>
             <li><a href="sponsors.html">Sponsors</a></li>
           </ul>
@@ -211,7 +246,7 @@
       </div>
       <div class="rightAlign">
         <h4 class="rightAlign">Last Updated:</h4>
-        <p>July 20th, 2026</p>
+        <p>August 10th, 2026</p>
       </div>
     </footer>
   </body>

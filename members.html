@@ -32,31 +32,69 @@
   </head>
   <body id="top">
     <nav class="topNav">
-      <a href="index.html">
-        <picture>
-          <source
-            srcset="images/first/NautilusTech_logo.avif"
-            type="image/avif"
-          />
-          <source
-            srcset="images/second/NautilusTech_logo.webp"
-            type="image/webp"
-          />
-          <img
-            src="images/fallback/NautilusTech_logo.png"
-            alt="NautliusTech logo"
-            style="height: 42px; width: 50px; border-radius: 10px 2px"
-          />
-        </picture>
-      </a>
+      <div style="display: grid; grid-template-columns: 50% 50%">
+        <a href="index.html">
+          <picture>
+            <source
+              srcset="images/first/NautilusTech_logo.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="images/second/NautilusTech_logo.webp"
+              type="image/webp"
+            />
+            <img
+              src="images/fallback/NautilusTech_logo.png"
+              alt="NautliusTech logo"
+              class="topNavLogo"
+            />
+          </picture>
+        </a>
+
+        <a
+          href="javascript:void(0);"
+          class="hamburgerIcon"
+          onclick="displayNav()"
+        >
+          &#8801;
+        </a>
+
+        <script>
+          function displayNav() {
+            var headE = document.getElementById("headE");
+            var headI = document.getElementById("headI");
+            var headS = document.getElementById("headS");
+            var optsE = document.getElementById("optsE");
+            var optsI = document.getElementById("optsI");
+            var optsS = document.getElementById("optsS");
+
+            if (getComputedStyle(headE).display === "none") {
+              headE.style.display = "block";
+              headI.style.display = "block";
+              headS.style.display = "block";
+              optsE.style.display = "block";
+              optsI.style.display = "block";
+              optsS.style.display = "block";
+            } else if (getComputedStyle(headE).display === "block") {
+              headE.style.display = "none";
+              headI.style.display = "none";
+              headS.style.display = "none";
+              optsE.style.display = "none";
+              optsI.style.display = "none";
+              optsS.style.display = "none";
+            }
+          }
+        </script>
+      </div>
 
       <div class="navDrop">
-        <div class="navHead">
+        <div class="navHead" id="headE">
           <a>Exploration&#9662;</a>
         </div>
 
-        <div class="navOpts">
+        <div class="navOpts" id="optsE">
           <ul>
+            <li><a href="season.html">This Year&apos;s Season</a></li>
             <li><a href="robot.html">Our Robot</a></li>
             <li><a href="experts.html">Learning from Experts</a></li>
             <li><a href="experiments.html">Experiments</a></li>
@@ -65,11 +103,11 @@
       </div>
 
       <div class="navDrop">
-        <div class="navHead">
+        <div class="navHead" id="headI">
           <a>Impact&#9662;</a>
         </div>
 
-        <div class="navOpts">
+        <div class="navOpts" id="optsI">
           <ul>
             <li><a href="events.html">Events</a></li>
             <li><a href="tutorials.html">Tutorials</a></li>
@@ -80,14 +118,13 @@
       </div>
 
       <div class="navDrop">
-        <div class="navHead">
+        <div class="navHead" id="headS">
           <a>Story&#9662;</a>
         </div>
 
-        <div class="navOpts">
+        <div class="navOpts" id="optsS">
           <ul>
-            <li><a class="currentPlace" href="members.html">Members</a></li>
-            <li><a href="season.html">This Year&apos;s Season</a></li>
+            <li><a href="members.html">Members</a></li>
             <li><a href="history.html">Team History</a></li>
             <li><a href="sponsors.html">Sponsors</a></li>
           </ul>
@@ -124,9 +161,12 @@
               <li><a href="#ellie">Ellie</a></li>
               <li><a href="#joshua">Joshua</a></li>
               <li><a href="#balaji">Balaji</a></li>
+              <li><a href="#isaiah">Isaiah</a></li>
+              <li><a href="#ishan">Ishan</a></li>
               <li><a href="#hudson">Hudson</a></li>
               <li><a href="#charlotte">Charlotte</a></li>
               <li><a href="#katie">Katie</a></li>
+              <li><a href="#gayatri">Gayatri</a></li>
               <li><a href="#nandan">Nandan</a></li>
               <li><a href="#david">David</a></li>
             </ul>
@@ -165,7 +205,11 @@
                           srcset="images/second/ryan.webp"
                           type="image/webp"
                         />
-                        <img src="images/fallback/ryan.jpeg" alt="Coach Ryan" />
+                        <img
+                          src="images/fallback/ryan.jpeg"
+                          alt="Coach Ryan"
+                          style="object-position: center 30%"
+                        />
                       </picture>
                     </div>
                     <h3>Ryan</h3>
@@ -224,7 +268,11 @@
                           srcset="images/second/mike.webp"
                           type="image/webp"
                         />
-                        <img src="images/fallback/mike.jpeg" alt="Coach Mike" />
+                        <img
+                          src="images/fallback/mike.jpeg"
+                          alt="Coach Mike"
+                          style="object-position: center 25%"
+                        />
                       </picture>
                     </div>
                     <h3>Mike</h3>
@@ -252,14 +300,15 @@
                       <img
                         src="images\andrew.jpeg"
                         alt="Andrew"
-                        style="object-position: center 57%"
+                        style="object-position: center 30%"
                       />
+                      <!--object-position: center 57%-->
                     </div>
                     <h3>Andrew</h3>
                     <h4>Co-Captain & Builder</h4>
                     <p>
                       I am a co-captain of NautilusTech and have been with the
-                      team for 7 years. I specialize in fields of design and
+                      team for 8 years. I specialize in fields of design and
                       building the robot, and have also helped with outreach in
                       the form of communication with other teams as well as
                       companies and the community. I am always looking out to
@@ -378,6 +427,44 @@
                 </div>
               </div>
             </div>
+            <div class="subInfoTrueSize" id="isaiah">
+              <div class="scroll">
+                <div class="curveCutOff">
+                  <div class="subInfoText">
+                    <div class="subInfoImage"></div>
+                    <h3>Isaiah</h3>
+                    <h4>Builder &amp; Designer</h4>
+                    <p>
+                      I am a designer and builder. This is my first year on the
+                      team and I specialize in designing and building the robot
+                      on the CAD software onshape. Outside of the team I do
+                      sports like track, crosscountry, and tennis. I love using
+                      computers and enjoy playing and creating games.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="subInfoTrueSize" id="ishan">
+              <div class="scroll">
+                <div class="curveCutOff">
+                  <div class="subInfoText">
+                    <div class="subInfoImage"></div>
+                    <h3>Ishan</h3>
+                    <h4>Builder &amp; Designer</h4>
+                    <p>
+                      Hi, I&apos;m Ishan, and I am a rookie to FTC and I have a
+                      focus on the building and CADing side. I am in 8th grade
+                      at Stoller Middle School. I have previously been part of
+                      FLL for 3 seasons and have some experience programming. I
+                      love projects related to technology and I am constantly
+                      halfway through one or two. I also do gymnastics and learn
+                      piano and guitar. I like math a lot too.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="subInfoTrueSize" id="hudson">
               <div class="scroll">
                 <div class="curveCutOff">
@@ -433,8 +520,8 @@
                         <img
                           src="images/fallback/charlotte.jpeg"
                           alt="Charlotte"
-                          style="object-position: center 20%"
-                        />
+                          style="object-position: center 15%"
+                        /><!--object-position: center 20%-->
                       </picture>
                     </div>
                     <h3>Charlotte</h3>
@@ -498,7 +585,26 @@
                 </div>
               </div>
             </div>
-
+            <div class="subInfoTrueSize" id="gayatri">
+              <div class="scroll">
+                <div class="curveCutOff">
+                  <div class="subInfoText">
+                    <div class="subInfoImage"></div>
+                    <h3>Gayatri</h3>
+                    <h4>Programmer</h4>
+                    <p>
+                      Hi, I&apos;m Gayatri, and I&apos;m a first-year programmer
+                      for NautilusTech. Since this is my first year in robotics,
+                      I&apos;m excited to learn Java. Outside of robotics, I
+                      enjoy watching wildlife, reading, drawing, and other
+                      visual arts. I also like doing math, which contributes to
+                      my enjoyment in doing logic puzzles and playing strategic
+                      board games.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="subInfoTrueSize" id="nandan">
               <div class="scroll">
                 <div class="curveCutOff">
@@ -544,7 +650,7 @@
                       <img
                         src="images/david.jpeg"
                         alt="David"
-                        style="object-position: center 65%"
+                        style="object-position: center 40%"
                       />
                     </div>
                     <h3>David</h3>
@@ -654,7 +760,6 @@
                       Former Programmer - Left after the 2024-25 Into the Deep
                       Season
                     </h4>
-                    <p>More information will be added once we ask permission</p>
                   </div>
                 </div>
               </div>
@@ -668,7 +773,6 @@
                       Former Builder - Left after the 2024-25 Into the Deep
                       Season
                     </h4>
-                    <p>More information will be added once we ask permission</p>
                   </div>
                 </div>
               </div>
@@ -682,7 +786,6 @@
                       Former Programmer - Left after the 2024-25 Into the Deep
                       Season
                     </h4>
-                    <p>More information will be added once we ask permission</p>
                   </div>
                 </div>
               </div>
@@ -723,7 +826,7 @@
       </div>
       <div class="rightAlign">
         <h4 class="rightAlign">Last Updated:</h4>
-        <p>July 20th, 2026</p>
+        <p>August 10th, 2026</p>
       </div>
     </footer>
   </body>
