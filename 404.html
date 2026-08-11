@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="stylesheet.css?v=1" />
+
+        <!--add fonts Nunito and Orbitron-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet"
+        />
+
+        <link
+        rel="icon"
+        type="image/x-icon"
+        href="images/fallback/NautilusTech_logo.png"
+        />
+
+        <title>404 page not found</title>
+    </head>
+    <body id="top">
+        <!--<div class="topBanner">
+        <h3>
+            Come see us at the
+            <a
+            href="https://wccls.bibliocommons.com/events/6a303cdb75b1e22800813c47"
+            target="_blank"
+            >Science Geek Out Fest at the Beaverton City Library</a
+            >
+            main branch on July 19th! See the
+            <a href="events.html" target="_blank">events</a> page for more details
+        </h3>
+        </div>-->
+
+        <nav class="topNav">
+        <div style="display: grid; grid-template-columns: 50% 50%">
+            <a href="index.html">
+            <picture>
+                <source
+                srcset="images/first/NautilusTech_logo.avif"
+                type="image/avif"
+                />
+                <source
+                srcset="images/second/NautilusTech_logo.webp"
+                type="image/webp"
+                />
+                <img
+                src="images/fallback/NautilusTech_logo.png"
+                alt="NautliusTech logo"
+                class="topNavLogo"
+                />
+            </picture>
+            </a>
+
+            <a
+            href="javascript:void(0);"
+            class="hamburgerIcon"
+            onclick="displayNav()"
+            >
+            &#8801;
+            </a>
+
+            <script>
+            function displayNav() {
+                var headE = document.getElementById("headE");
+                var headI = document.getElementById("headI");
+                var headS = document.getElementById("headS");
+                var optsE = document.getElementById("optsE");
+                var optsI = document.getElementById("optsI");
+                var optsS = document.getElementById("optsS");
+
+                if (getComputedStyle(headE).display === "none") {
+                headE.style.display = "block";
+                headI.style.display = "block";
+                headS.style.display = "block";
+                optsE.style.display = "block";
+                optsI.style.display = "block";
+                optsS.style.display = "block";
+                } else if (getComputedStyle(headE).display === "block") {
+                headE.style.display = "none";
+                headI.style.display = "none";
+                headS.style.display = "none";
+                optsE.style.display = "none";
+                optsI.style.display = "none";
+                optsS.style.display = "none";
+                }
+            }
+            </script>
+        </div>
+
+        <div class="navDrop">
+            <div class="navHead" id="headE">
+            <a>Exploration&#9662;</a>
+            </div>
+
+            <div class="navOpts" id="optsE">
+            <ul>
+                <li><a href="season.html">This Year&apos;s Season</a></li>
+                <li><a href="robot.html">Our Robot</a></li>
+                <li><a href="experts.html">Learning from Experts</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="navDrop">
+            <div class="navHead" id="headI">
+            <a>Impact&#9662;</a>
+            </div>
+
+            <div class="navOpts" id="optsI">
+            <ul>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="resources.html">More Resources</a></li>
+                <li><a href="outreach.html">Past Outreach</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="navDrop">
+            <div class="navHead" id="headS">
+            <a>Story&#9662;</a>
+            </div>
+
+            <div class="navOpts" id="optsS">
+            <ul>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="history.html">Team History</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+        <picture>
+            <img
+            src="images/lightningNOOOOO.png"
+            alt="404error"
+            style="max-width: 600px; display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;"
+            
+            />
+            <!-- style="" -->
+        </picture>
+
+        <h1 class="pageHeading">
+            404 page not found
+        </h1>
+        </div>
+    </body>
+</html>
