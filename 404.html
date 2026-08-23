@@ -1,33 +1,32 @@
 <!doctype html>
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css?v=1" />
 
-        <link rel="stylesheet" href="stylesheet.css?v=1" />
+    <!--add fonts Nunito and Orbitron-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
 
-        <!--add fonts Nunito and Orbitron-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
-        rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-        rel="stylesheet"
-        />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/fallback/NautilusTech_logo.png"
+    />
 
-        <link
-        rel="icon"
-        type="image/x-icon"
-        href="images/fallback/NautilusTech_logo.png"
-        />
-
-        <title>404 page not found</title>
-    </head>
-    <body id="top">
-        <!--<div class="topBanner">
+    <title>404 page not found</title>
+  </head>
+  <body id="top">
+    <!--<div class="topBanner">
         <h3>
             Come see us at the
             <a
@@ -40,123 +39,141 @@
         </h3>
         </div>-->
 
-        <nav class="topNav">
-        <div style="display: grid; grid-template-columns: 50% 50%">
-            <a href="index.html">
-            <picture>
-                <source
-                srcset="images/first/NautilusTech_logo.avif"
-                type="image/avif"
-                />
-                <source
-                srcset="images/second/NautilusTech_logo.webp"
-                type="image/webp"
-                />
-                <img
-                src="images/fallback/NautilusTech_logo.png"
-                alt="NautliusTech logo"
-                class="topNavLogo"
-                />
-            </picture>
-            </a>
-
-            <a
-            href="javascript:void(0);"
-            class="hamburgerIcon"
-            onclick="displayNav()"
-            >
-            &#8801;
-            </a>
-
-            <script>
-            function displayNav() {
-                var headE = document.getElementById("headE");
-                var headI = document.getElementById("headI");
-                var headS = document.getElementById("headS");
-                var optsE = document.getElementById("optsE");
-                var optsI = document.getElementById("optsI");
-                var optsS = document.getElementById("optsS");
-
-                if (getComputedStyle(headE).display === "none") {
-                headE.style.display = "block";
-                headI.style.display = "block";
-                headS.style.display = "block";
-                optsE.style.display = "block";
-                optsI.style.display = "block";
-                optsS.style.display = "block";
-                } else if (getComputedStyle(headE).display === "block") {
-                headE.style.display = "none";
-                headI.style.display = "none";
-                headS.style.display = "none";
-                optsE.style.display = "none";
-                optsI.style.display = "none";
-                optsS.style.display = "none";
-                }
-            }
-            </script>
-        </div>
-
-        <div class="navDrop">
-            <div class="navHead" id="headE">
-            <a>Exploration&#9662;</a>
-            </div>
-
-            <div class="navOpts" id="optsE">
-            <ul>
-                <li><a href="season.html">This Year&apos;s Season</a></li>
-                <li><a href="robot.html">Our Robot</a></li>
-                <li><a href="experts.html">Learning from Experts</a></li>
-                <li><a href="experiments.html">Experiments</a></li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="navDrop">
-            <div class="navHead" id="headI">
-            <a>Impact&#9662;</a>
-            </div>
-
-            <div class="navOpts" id="optsI">
-            <ul>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="tutorials.html">Tutorials</a></li>
-                <li><a href="resources.html">More Resources</a></li>
-                <li><a href="outreach.html">Past Outreach</a></li>
-            </ul>
-            </div>
-        </div>
-
-        <div class="navDrop">
-            <div class="navHead" id="headS">
-            <a>Story&#9662;</a>
-            </div>
-
-            <div class="navOpts" id="optsS">
-            <ul>
-                <li><a href="members.html">Members</a></li>
-                <li><a href="history.html">Team History</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-            </ul>
-            </div>
-        </div>
-        </nav>
-
-        <picture>
-            <img
-            src="images/lightningNOOOOO.png"
-            alt="404error"
-            style="max-width: 600px; display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;"
-            
+    <nav class="topNav">
+      <div style="display: grid; grid-template-columns: 50% 50%">
+        <a href="index.html">
+          <picture>
+            <source
+              srcset="images/first/NautilusTech_logo.avif"
+              type="image/avif"
             />
-            <!-- style="" -->
-        </picture>
+            <source
+              srcset="images/second/NautilusTech_logo.webp"
+              type="image/webp"
+            />
+            <img
+              src="images/fallback/NautilusTech_logo.png"
+              alt="NautliusTech logo"
+              class="topNavLogo"
+            />
+          </picture>
+        </a>
 
-        <h1 class="pageHeading">
-            404 page not found
-        </h1>
+        <a
+          href="javascript:void(0);"
+          class="hamburgerIcon"
+          onclick="displayNav()"
+        >
+          &#8801;
+        </a>
+
+        <script>
+          function displayNav() {
+            var headE = document.getElementById("headE");
+            var headI = document.getElementById("headI");
+            var headS = document.getElementById("headS");
+            var optsE = document.getElementById("optsE");
+            var optsI = document.getElementById("optsI");
+            var optsS = document.getElementById("optsS");
+
+            if (getComputedStyle(headE).display === "none") {
+              headE.style.display = "block";
+              headI.style.display = "block";
+              headS.style.display = "block";
+              optsE.style.display = "block";
+              optsI.style.display = "block";
+              optsS.style.display = "block";
+            } else if (getComputedStyle(headE).display === "block") {
+              headE.style.display = "none";
+              headI.style.display = "none";
+              headS.style.display = "none";
+              optsE.style.display = "none";
+              optsI.style.display = "none";
+              optsS.style.display = "none";
+            }
+          }
+        </script>
+      </div>
+
+      <div class="navDrop">
+        <div class="navHead" id="headE">
+          <a>Exploration&#9662;</a>
         </div>
-    </body>
+
+        <div class="navOpts" id="optsE">
+          <ul>
+            <li><a href="season.html">This Year&apos;s Season</a></li>
+            <li><a href="robot.html">Our Robot</a></li>
+            <li><a href="experts.html">Learning from Experts</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navDrop">
+        <div class="navHead" id="headI">
+          <a>Impact&#9662;</a>
+        </div>
+
+        <div class="navOpts" id="optsI">
+          <ul>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="resources.html">More Resources</a></li>
+            <li><a href="outreach.html">Past Outreach</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="navDrop">
+        <div class="navHead" id="headS">
+          <a>Story&#9662;</a>
+        </div>
+
+        <div class="navOpts" id="optsS">
+          <ul>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="history.html">Team History</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="headingPhoto">
+      <img
+        src="images/nautilusMeetsNautilus.png"
+        alt="Nautilus-shaped Nautilus submarine meets a small nautilus which says hi!"
+      />
+      <h1 class="pageHeading">404 page not found</h1>
+    </div>
+
+    <div class="subInfoTrueSize">
+      <div class="scroll">
+        <div class="curveCutOff">
+          <div class="subInfoText">
+            <h3>
+              It appears you've become lost in the high seas of the internet,
+              but don't worry, these little guys are here to help you find your
+              way back!
+            </h3>
+            <p>
+              They would like to recommend that you visit our homepage
+              <a href="index.html">nautilustechftc.com</a>, or take a minute to
+              learn about our robot at
+              <a href="robot.html">nautilustechftc.com&#47;robot</a>. They also
+              recommend visiting
+              <a href="members.html">nautilustechftc.com&#47;members</a> to
+              learn more about the team they love, and checking out
+              <a href="events.html">nautilustechftc.com&#47;events</a> to learn
+              how to come see their team in person so they can get to know you.
+              They wish you happy travels wherever you decide to go within this
+              website and promise to be here to help if you ever lose your way
+              again. Bon voyage!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

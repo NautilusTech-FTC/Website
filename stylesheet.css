@@ -107,6 +107,7 @@ img {
   object-fit: cover;
   object-position: center center;
   display: block;
+  background-color: var(--NTorange);
 }
 
 .headingPhoto {
@@ -378,7 +379,63 @@ footer h4 {
   display: none;
 }
 
-/*MOBILE/TINY SCREEN FRIENDLY*/
+/*MEMBERS PAGE PHOTO POSITIONING SO IT CAN BE DIFFERENT FOR DIFFERENT SCREEN SIZES*/
+#ryan img {
+  object-position: center 55%;
+}
+
+#mike img {
+  object-position: center 50%;
+}
+
+#andrew img {
+  object-position: center 60%;
+}
+
+#ellie img {
+  object-position: center 10%;
+}
+
+#joshua img {
+  object-position: center 10%;
+}
+
+#balaji img {
+  object-position: center 8%;
+}
+
+#isaiah img {
+  object-position: center 75%;
+}
+
+#ishan img {
+  object-position: center 10%;
+}
+
+#hudson img {
+  object-position: center 5%;
+}
+
+#charlotte img {
+  object-position: center 20%;
+}
+
+#katie img {
+  object-position: center 15%;
+}
+
+#gayatri img {
+  object-position: center 100%;
+}
+
+#nandan img {
+  object-position: center 3%;
+}
+
+#david img {
+  object-position: center 65%;
+}
+
 @media screen and (max-width: 1000px) {
   .topNavLogo {
     height: 84px;
@@ -434,6 +491,10 @@ footer h4 {
     font-size: 1.5em;
   }
 
+  h4 {
+    font-size: 1.5em;
+  }
+
   h3 {
     font-size: 2em;
   }
@@ -457,5 +518,62 @@ footer h4 {
 
   .hideInMobile {
     display: none;
+  }
+
+  /*MEMEBERS PAGE CHANGES*/
+  #ryan img {
+    object-position: center 30%;
+  }
+
+  #mike img {
+    object-position: center 25%;
+  }
+
+  #andrew img {
+    object-position: center 30%;
+  }
+
+  #ellie img {
+    object-position: center 7%;
+  }
+
+  #joshua img {
+    object-position: center 5%;
+  }
+
+  #balaji img {
+    object-position: center 5%;
+  }
+
+  #isaiah img {
+    object-position: center 40%;
+  }
+
+  #ishan img {
+    object-position: center 7%;
+  }
+
+  #hudson img {
+    object-position: center 4%;
+  }
+
+  #charlotte img {
+    object-position: center 10%;
+  }
+
+  #katie img {
+    object-position: center 9%;
+  }
+
+  #gayatri img {
+    object-position: center 55%;
+  }
+
+  #nandan img {
+    object-position: center 4%;
+  }
+
+  #david img {
+    object-position: center 35%;
   }
 }
