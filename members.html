@@ -6,7 +6,7 @@
       content="Meet the members behind FTC team 23139 NautilusTech"
     />
 
-    <link rel="stylesheet" href="stylesheet.css?v=1" />
+    <link rel="stylesheet" href="stylesheet.css?v=2" />
     <link rel="stylesheet" media="print" href="print.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -84,6 +84,28 @@
               optsS.style.display = "none";
             }
           }
+
+          var mediaQuery = window.matchMedia("(min-width: 1000px)");
+
+          function unHamburger(e) {
+            if (e.matches) {
+              var headE = document.getElementById("headE");
+              var headI = document.getElementById("headI");
+              var headS = document.getElementById("headS");
+              var optsE = document.getElementById("optsE");
+              var optsI = document.getElementById("optsI");
+              var optsS = document.getElementById("optsS");
+
+              headE.style.removeProperty("display");
+              headI.style.removeProperty("display");
+              headS.style.removeProperty("display");
+              optsE.style.removeProperty("display");
+              optsI.style.removeProperty("display");
+              optsS.style.removeProperty("display");
+            }
+          }
+
+          mediaQuery.addEventListener("change", unHamburger);
         </script>
       </div>
 
@@ -160,6 +182,7 @@
               <li><a href="#andrew">Andrew</a></li>
               <li><a href="#ellie">Ellie</a></li>
               <li><a href="#joshua">Joshua</a></li>
+              <li><a href="#david">David</a></li>
               <li><a href="#balaji">Balaji</a></li>
               <li><a href="#isaiah">Isaiah</a></li>
               <li><a href="#ishan">Ishan</a></li>
@@ -168,7 +191,6 @@
               <li><a href="#katie">Katie</a></li>
               <li><a href="#gayatri">Gayatri</a></li>
               <li><a href="#nandan">Nandan</a></li>
-              <li><a href="#david">David</a></li>
             </ul>
           </div>
 
@@ -196,17 +218,11 @@
                 <div class="curveCutOff">
                   <div class="subInfoText">
                     <div class="subInfoImage">
-                      <picture>
-                        <source
-                          srcset="images/first/ryan.avif"
-                          type="image/avif"
-                        />
-                        <source
-                          srcset="images/second/ryan.webp"
-                          type="image/webp"
-                        />
-                        <img src="images/fallback/ryan.jpeg" alt="Coach Ryan" />
-                      </picture>
+                      <img
+                        src="images/fallback/ryan.jpeg"
+                        alt="Coach Ryan"
+                        class="member"
+                      />
                     </div>
                     <h3>Ryan</h3>
                     <h4>Coach</h4>
@@ -255,17 +271,11 @@
                 <div class="curveCutOff">
                   <div class="subInfoText">
                     <div class="subInfoImage">
-                      <picture>
-                        <source
-                          srcset="images/first/mike.avif"
-                          type="image/avif"
-                        />
-                        <source
-                          srcset="images/second/mike.webp"
-                          type="image/webp"
-                        />
-                        <img src="images/fallback/mike.jpeg" alt="Coach Mike" />
-                      </picture>
+                      <img
+                        src="images/fallback/mike.jpeg"
+                        alt="Coach Mike"
+                        class="member"
+                      />
                     </div>
                     <h3>Mike</h3>
                     <h4>Coach</h4>
@@ -289,7 +299,11 @@
                 <div class="curveCutOff">
                   <div class="subInfoText">
                     <div class="subInfoImage">
-                      <img src="images\andrew.jpeg" alt="Andrew" />
+                      <img
+                        src="images\andrew.jpeg"
+                        alt="Andrew"
+                        class="member"
+                      />
                     </div>
                     <h3>Andrew</h3>
                     <h4>Co-Captain & Builder</h4>
@@ -322,7 +336,11 @@
                           srcset="images/second/ellie.webp"
                           type="image/webp"
                         />
-                        <img src="images/fallback/ellie.jpeg" alt="Ellie" />
+                        <img
+                          src="images/fallback/ellie.jpeg"
+                          alt="Ellie"
+                          class="member"
+                        />
                       </picture>
                     </div>
                     <h3>Ellie</h3>
@@ -362,7 +380,11 @@
                           srcset="images/second/joshua.webp"
                           type="image/webp"
                         />
-                        <img src="images/fallback/joshua.jpeg" alt="Joshusa" />
+                        <img
+                          src="images/fallback/joshua.jpeg"
+                          alt="Joshusa"
+                          class="member"
+                        />
                       </picture>
                     </div>
                     <h3>Joshua</h3>
@@ -379,12 +401,37 @@
                 </div>
               </div>
             </div>
+            <div class="subInfoTrueSize" id="david">
+              <div class="scroll">
+                <div class="curveCutOff">
+                  <div class="subInfoText">
+                    <div class="subInfoImage">
+                      <img src="images/david.jpeg" alt="David" class="member" />
+                    </div>
+                    <h3>David</h3>
+                    <h4>Builder and Designer</h4>
+                    <p>
+                      This is my second season on NautilusTech. I am part of the
+                      marketing team and drive team, I am learning CAD and CNC.
+                      I am in my school&apos;s theater/drama program like being
+                      in plays and musicals. I love doing music and have learned
+                      many instruments. I like creating computer designing
+                      posters and websites, and learning more about robotics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="subInfoTrueSize" id="balaji">
               <div class="scroll">
                 <div class="curveCutOff">
                   <div class="subInfoText">
                     <div class="subInfoImage">
-                      <img src="images\balaji.jpeg" alt="Balaji" />
+                      <img
+                        src="images\balaji.jpeg"
+                        alt="Balaji"
+                        class="member"
+                      />
                     </div>
                     <h3>Balaji</h3>
                     <h4>Builder &amp; Designer</h4>
@@ -408,7 +455,11 @@
                 <div class="curveCutOff">
                   <div class="subInfoText">
                     <div class="subInfoImage">
-                      <img src="images\isaiah.jpeg" alt="Isaiah" />
+                      <img
+                        src="images\isaiah.jpeg"
+                        alt="Isaiah"
+                        class="member"
+                      />
                     </div>
                     <h3>Isaiah</h3>
                     <h4>Builder &amp; Designer</h4>
@@ -428,7 +479,7 @@
                 <div class="curveCutOff">
                   <div class="subInfoText">
                     <div class="subInfoImage">
-                      <img src="images\ishan.jpeg" alt="Ishan" />
+                      <img src="images\ishan.jpeg" alt="Ishan" class="member" />
                     </div>
                     <h3>Ishan</h3>
                     <h4>Builder &amp; Designer</h4>
@@ -459,7 +510,11 @@
                           srcset="images/second/hudson.webp"
                           type="image/webp"
                         />
-                        <img src="images/fallback/hudson.jpeg" alt="Hudson" />
+                        <img
+                          src="images/fallback/hudson.jpeg"
+                          alt="Hudson"
+                          class="member"
+                        />
                       </picture>
                     </div>
                     <h3>Hudson</h3>
@@ -496,6 +551,7 @@
                         <img
                           src="images/fallback/charlotte.jpeg"
                           alt="Charlotte"
+                          class="member"
                         />
                       </picture>
                     </div>
@@ -534,7 +590,11 @@
                           srcset="images/second/katie.webp"
                           type="image/webp"
                         />
-                        <img src="images/fallback/katie.jpeg" alt="Katie" />
+                        <img
+                          src="images/fallback/katie.jpeg"
+                          alt="Katie"
+                          class="member"
+                        />
                       </picture>
                     </div>
                     <h3>Katie</h3>
@@ -561,7 +621,11 @@
                 <div class="curveCutOff">
                   <div class="subInfoText">
                     <div class="subInfoImage">
-                      <img src="images\gayatri.jpeg" alt="Gayatri" />
+                      <img
+                        src="images\gayatri.jpeg"
+                        alt="Gayatri"
+                        class="member"
+                      />
                     </div>
                     <h3>Gayatri</h3>
                     <h4>Programmer</h4>
@@ -592,7 +656,11 @@
                           srcset="images/second/nandan.webp"
                           type="image/webp"
                         />
-                        <img src="images/fallback/nandan.jpeg" alt="Nandan" />
+                        <img
+                          src="images/fallback/nandan.jpeg"
+                          alt="Nandan"
+                          class="member"
+                        />
                       </picture>
                     </div>
                     <h3>Nandan</h3>
@@ -606,27 +674,6 @@
                       the build team when I can. Outside of FTC I enjoy
                       Basketball, Racquetball, watching football, and playing
                       the piano.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="subInfoTrueSize" id="david">
-              <div class="scroll">
-                <div class="curveCutOff">
-                  <div class="subInfoText">
-                    <div class="subInfoImage">
-                      <img src="images/david.jpeg" alt="David" />
-                    </div>
-                    <h3>David</h3>
-                    <h4>Driver</h4>
-                    <p>
-                      This is my second season on NautilusTech. I am part of the
-                      marketing team and drive team, I am learning CAD and CNC.
-                      I am in my school&apos;s theater/drama program like being
-                      in plays and musicals. I love doing music and have learned
-                      many instruments. I like creating computer designing
-                      posters and websites, and learning more about robotics.
                     </p>
                   </div>
                 </div>
@@ -655,7 +702,7 @@
                         <img
                           src="images/fallback/lennon.jpeg"
                           alt="Lennon"
-                          style="object-position: center 15%"
+                          class="member"
                         />
                       </picture>
                     </div>
@@ -694,7 +741,7 @@
                         <img
                           src="images/fallback/bryan.jpeg"
                           alt="Bryan"
-                          style="object-position: center 10%"
+                          class="member"
                         />
                       </picture>
                     </div>
@@ -764,10 +811,16 @@
         <h4>Contacts:</h4>
         <p>
           Email: nautilustech23139@gmail.com<br />
-          Instagram: @nautilustech23139
+          Instagram:
+          <a
+            style="text-decoration: underline"
+            href="https://www.instagram.com/nautilustech23139"
+            target="_blank"
+            >@nautilustech23139</a
+          >
         </p>
       </div>
-      <div>
+      <div style="justify-self: center">
         <picture>
           <source
             srcset="images/first/NautilusTech_logo.avif"
@@ -780,12 +833,8 @@
           <img
             src="images/fallback/NautilusTech_logo.png"
             alt="NautilusTech logo"
-            style="
-              height: 100px;
-              width: 100px;
-              justify-self: center;
-              border-radius: 20px 2px;
-            "
+            style="height: 100px; width: 100px; border-radius: 20px 2px"
+            class="hideInMobile"
           />
         </picture>
       </div>

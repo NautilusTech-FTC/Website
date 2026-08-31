@@ -133,6 +133,7 @@ img {
   height: 400px;
   overflow: hidden;
   position: relative;
+  background-color: var(--NTorange);
 }
 
 .topNav {
@@ -153,6 +154,12 @@ img {
 
 .navOpts li {
   margin-left: 0px;
+}
+
+.normalLink {
+  font-family: nunito, sans-serif;
+  display: inline;
+  padding: 0px;
 }
 
 .navOpts li a {
@@ -275,18 +282,17 @@ footer h4 {
   border-color: var(--NTnavy);
   border-radius: 50px 10px;
   height: auto;
-  min-height: 600px;
   box-shadow: 0px 0px 0px 8px var(--NTorange);
   overflow: hidden;
   background-color: white;
 }
 
 .threeColumnSubInfo .scroll {
-  height: 300px;
+  height: 600px;
 }
 
 .twoColumnSubInfo .scroll {
-  height: 300px;
+  height: 600px;
 }
 
 .curveCutOff {
@@ -300,10 +306,11 @@ footer h4 {
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
+  padding-bottom: 40px;
 }
 
 .subInfoText p {
-  margin: 10px 30px;
+  margin: 10px 30px 0px 30px;
 }
 
 .threeColumnSubInfo {
@@ -379,61 +386,8 @@ footer h4 {
   display: none;
 }
 
-/*MEMBERS PAGE PHOTO POSITIONING SO IT CAN BE DIFFERENT FOR DIFFERENT SCREEN SIZES*/
-#ryan img {
-  object-position: center 55%;
-}
-
-#mike img {
-  object-position: center 50%;
-}
-
-#andrew img {
-  object-position: center 60%;
-}
-
-#ellie img {
-  object-position: center 10%;
-}
-
-#joshua img {
-  object-position: center 10%;
-}
-
-#balaji img {
-  object-position: center 8%;
-}
-
-#isaiah img {
-  object-position: center 75%;
-}
-
-#ishan img {
-  object-position: center 10%;
-}
-
-#hudson img {
-  object-position: center 5%;
-}
-
-#charlotte img {
-  object-position: center 20%;
-}
-
-#katie img {
-  object-position: center 15%;
-}
-
-#gayatri img {
-  object-position: center 100%;
-}
-
-#nandan img {
-  object-position: center 3%;
-}
-
-#david img {
-  object-position: center 65%;
+.member {
+  object-position: center 0%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -518,62 +472,5 @@ footer h4 {
 
   .hideInMobile {
     display: none;
-  }
-
-  /*MEMEBERS PAGE CHANGES*/
-  #ryan img {
-    object-position: center 30%;
-  }
-
-  #mike img {
-    object-position: center 25%;
-  }
-
-  #andrew img {
-    object-position: center 30%;
-  }
-
-  #ellie img {
-    object-position: center 7%;
-  }
-
-  #joshua img {
-    object-position: center 5%;
-  }
-
-  #balaji img {
-    object-position: center 5%;
-  }
-
-  #isaiah img {
-    object-position: center 40%;
-  }
-
-  #ishan img {
-    object-position: center 7%;
-  }
-
-  #hudson img {
-    object-position: center 4%;
-  }
-
-  #charlotte img {
-    object-position: center 10%;
-  }
-
-  #katie img {
-    object-position: center 9%;
-  }
-
-  #gayatri img {
-    object-position: center 55%;
-  }
-
-  #nandan img {
-    object-position: center 4%;
-  }
-
-  #david img {
-    object-position: center 35%;
   }
 }

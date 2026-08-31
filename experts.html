@@ -6,7 +6,7 @@
       content="Discover how FTC team 23139 NautilusTech learns from experts in their community"
     />
 
-    <link rel="stylesheet" href="stylesheet.css?v=1" />
+    <link rel="stylesheet" href="stylesheet.css?v=2" />
 
     <!--add fonts Nunito and Orbitron-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -84,6 +84,28 @@
               optsS.style.display = "none";
             }
           }
+
+          var mediaQuery = window.matchMedia("(min-width: 1000px)");
+
+          function unHamburger(e) {
+            if (e.matches) {
+              var headE = document.getElementById("headE");
+              var headI = document.getElementById("headI");
+              var headS = document.getElementById("headS");
+              var optsE = document.getElementById("optsE");
+              var optsI = document.getElementById("optsI");
+              var optsS = document.getElementById("optsS");
+
+              headE.style.removeProperty("display");
+              headI.style.removeProperty("display");
+              headS.style.removeProperty("display");
+              optsE.style.removeProperty("display");
+              optsI.style.removeProperty("display");
+              optsS.style.removeProperty("display");
+            }
+          }
+
+          mediaQuery.addEventListener("change", unHamburger);
         </script>
       </div>
 
@@ -266,10 +288,16 @@
         <h4>Contacts:</h4>
         <p>
           Email: nautilustech23139@gmail.com<br />
-          Instagram: @nautilustech23139
+          Instagram:
+          <a
+            style="text-decoration: underline"
+            href="https://www.instagram.com/nautilustech23139"
+            target="_blank"
+            >@nautilustech23139</a
+          >
         </p>
       </div>
-      <div>
+      <div style="justify-self: center">
         <picture>
           <source
             srcset="images/first/NautilusTech_logo.avif"
@@ -282,12 +310,8 @@
           <img
             src="images/fallback/NautilusTech_logo.png"
             alt="NautilusTech logo"
-            style="
-              height: 100px;
-              width: 100px;
-              justify-self: center;
-              border-radius: 20px 2px;
-            "
+            style="height: 100px; width: 100px; border-radius: 20px 2px"
+            class="hideInMobile"
           />
         </picture>
       </div>

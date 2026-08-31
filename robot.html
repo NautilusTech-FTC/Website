@@ -6,7 +6,7 @@
       content="Learn about FTC team 23139 NautilusTech's DECODE season robot"
     />
 
-    <link rel="stylesheet" href="stylesheet.css?v=1" />
+    <link rel="stylesheet" href="stylesheet.css?v=2" />
 
     <!--add fonts Nunito and Orbitron-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -84,6 +84,28 @@
               optsS.style.display = "none";
             }
           }
+
+          var mediaQuery = window.matchMedia("(min-width: 1000px)");
+
+          function unHamburger(e) {
+            if (e.matches) {
+              var headE = document.getElementById("headE");
+              var headI = document.getElementById("headI");
+              var headS = document.getElementById("headS");
+              var optsE = document.getElementById("optsE");
+              var optsI = document.getElementById("optsI");
+              var optsS = document.getElementById("optsS");
+
+              headE.style.removeProperty("display");
+              headI.style.removeProperty("display");
+              headS.style.removeProperty("display");
+              optsE.style.removeProperty("display");
+              optsI.style.removeProperty("display");
+              optsS.style.removeProperty("display");
+            }
+          }
+
+          mediaQuery.addEventListener("change", unHamburger);
         </script>
       </div>
 
@@ -338,38 +360,104 @@
 
                     <ol>
                       <li>
-                        Scrimmage: 60 points in Q4 with 26407 Over-Caffinated
+                        Scrimmage:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/BAU0O1_mSYE?t=1262"
+                          target="_blank"
+                          >60 points in Q4</a
+                        >
+                        with 26407 Over-Caffinated Engineers
+                      </li>
+                      <li>
+                        Meet 1:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/RdX21BB0A80?t=11147"
+                          target="_blank"
+                          >173 points in Q26</a
+                        >
+                        with 12808 RevAmped Robotics
+                      </li>
+                      <li>
+                        Meet 2:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/f0qAfJo19Do?t=4319"
+                          target="_blank"
+                          >192 points in Q12</a
+                        >
+                        with 12808 RevAmped Robotics
+                      </li>
+                      <li>
+                        Meet 3:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/RJA1dfgghXs?t=7717"
+                          target="_blank"
+                          >144 points in Q25</a
+                        >
+                        with 19439 Disconnect
+                      </li>
+                      <li>
+                        League Tournament Qualifiers:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/Mk-uPcyF5ZQ?t=7425"
+                          target="_blank"
+                          >222 points in Q15</a
+                        >
+                        with 12808 RevAmped Robotics
+                      </li>
+                      <li>
+                        League Tournament Playoffs:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/Mk-uPcyF5ZQ?t=14401"
+                          target="_blank"
+                          >187 points in M1</a
+                        >
+                        with our alliance partner 26407 Over-Caffinated
                         Engineers
                       </li>
                       <li>
-                        Meet 1: 173 points in Q26 with 12808 RevAmped Robotics
+                        Spark Invitational Qualifiers:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/LNoHfnyab6s?t=19673"
+                          target="_blank"
+                          >159 points in Q41</a
+                        >
+                        with 24261 S.O.S.
                       </li>
                       <li>
-                        Meet 2: 192 points in Q12 with 12808 RevAmped Robotics
-                      </li>
-                      <li>Meet 3: 144 points in Q25 with 19439 Disconnect</li>
-                      <li>
-                        League Tournament Qualifiers: 222 points in Q15 with
-                        12808 RevAmped Robotics
-                      </li>
-                      <li>
-                        League Tournament Playoffs: 187 points in M1 with our
-                        alliance partner 26407 Over-Caffinated Engineers
+                        Spark Invitational Playoffs:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/LNoHfnyab6s?t=25940"
+                          target="_blank"
+                          >215 points in M3</a
+                        >
+                        with our alliance partner 267 EMP
                       </li>
                       <li>
-                        Spark Invitational Qualifiers: 159 points in Q41 with
-                        24261 S.O.S.
-                      </li>
-                      <li>
-                        Spark Invitational Playoffs: 215 points in M3 with our
-                        alliance partner 267 EMP
-                      </li>
-                      <li>
-                        Oregon State Championship Qualifiers: 243 points in Q37
+                        Oregon State Championship Qualifiers:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/QYd-vxMcIuc?t=12764"
+                          target="_blank"
+                          >243 points in Q37</a
+                        >
                         with 8188 Rivets
                       </li>
                       <li>
-                        Oregon State Championship Playoffs: 260 points in M4
+                        Oregon State Championship Playoffs:
+                        <a
+                          class="normalLink"
+                          href="https://youtu.be/QYd-vxMcIuc?t=22837"
+                          target="_blank"
+                          >260 points in M4</a
+                        >
                         with our alliance partner 18108 High Voltage
                       </li>
                     </ol>
@@ -461,10 +549,16 @@
         <h4>Contacts:</h4>
         <p>
           Email: nautilustech23139@gmail.com<br />
-          Instagram: @nautilustech23139
+          Instagram:
+          <a
+            style="text-decoration: underline"
+            href="https://www.instagram.com/nautilustech23139"
+            target="_blank"
+            >@nautilustech23139</a
+          >
         </p>
       </div>
-      <div>
+      <div style="justify-self: center">
         <picture>
           <source
             srcset="images/first/NautilusTech_logo.avif"
@@ -477,12 +571,8 @@
           <img
             src="images/fallback/NautilusTech_logo.png"
             alt="NautilusTech logo"
-            style="
-              height: 100px;
-              width: 100px;
-              justify-self: center;
-              border-radius: 20px 2px;
-            "
+            style="height: 100px; width: 100px; border-radius: 20px 2px"
+            class="hideInMobile"
           />
         </picture>
       </div>
