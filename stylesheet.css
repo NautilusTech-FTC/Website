@@ -309,6 +309,10 @@ footer h4 {
   padding-bottom: 40px;
 }
 
+.twoColumnSubInfo .subInfoText {
+  padding-bottom: 0px;
+}
+
 .subInfoText p {
   margin: 10px 30px 0px 30px;
 }
