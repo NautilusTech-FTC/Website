@@ -41,6 +41,12 @@ h2 {
   color: black;
 }
 
+.subInfoText li a {
+  font-family: nunito, sans-serif;
+  padding: 0px;
+  display: inline;
+}
+
 h3 {
   font-family: orbitron, serif;
   font-weight: bold;
