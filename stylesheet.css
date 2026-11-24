@@ -404,6 +404,33 @@ footer h4 {
   object-position: center 0%;
 }
 
+#friend {
+  position: fixed;
+  pointer-events: none;
+  z-index: 10;
+  display: none;
+  height: 200px;
+  width: 200px;
+  background: none;
+  transition:
+    left 0.2s ease-out,
+    top 0.2s ease-out;
+}
+
+#friendButton {
+  background-color: var(--NTorange);
+  font-family: Orbitron, serif;
+  font-weight: bold;
+  height: 100px;
+  width: 100px;
+  border: none;
+  border-radius: 20px 4px;
+}
+
+#friendButton:active {
+  background-color: white;
+}
+
 @media screen and (max-width: 1000px) {
   .topNavLogo {
     height: 84px;
@@ -485,6 +512,16 @@ footer h4 {
   }
 
   .hideInMobile {
+    display: none;
+  }
+
+  #friendButton {
+    display: none;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  #friendButton {
     display: none;
   }
 }

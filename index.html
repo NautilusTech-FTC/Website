@@ -6,7 +6,7 @@
       content="Team 23139 NautilusTech is an Oregon First Tech Challenge (FTC) robotics team in the Silicon Forest League"
     />
 
-    <link rel="stylesheet" href="stylesheet.css?v=4" />
+    <link rel="stylesheet" href="stylesheet.css?v=5" />
 
     <!--add fonts Nunito and Orbitron-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,6 +31,12 @@
     <title>Home - NautilusTech 23139</title>
   </head>
   <body id="top">
+    <img
+      src="images/nautilusFriendLeft.png"
+      alt="little nautilus friend"
+      id="friend"
+    />
+    <!--
     <div class="topBanner">
       <h3>
         Come see us compete at the
@@ -43,6 +49,7 @@
         <a href="events.html" target="_blank">events</a> page for more details
       </h3>
     </div>
+    -->
 
     <nav class="topNav">
       <div style="display: grid; grid-template-columns: 50% 50%">
@@ -560,22 +567,42 @@
         </p>
       </div>
       <div style="display: flex; align-items: center; justify-content: center">
-        <picture class="hideInMobile">
-          <source
-            srcset="images/first/NautilusTech_logo.avif"
-            type="image/avif"
-          />
-          <source
-            srcset="images/second/NautilusTech_logo.webp"
-            type="image/webp"
-          />
-          <img
-            src="images/fallback/NautilusTech_logo.png"
-            alt="NautilusTech logo"
-            style="height: 100px; width: 100px; border-radius: 20px 2px"
-            class="hideInMobile"
-          />
-        </picture>
+        <button id="friendButton" type="button">Make Friend!</button>
+        <script>
+          const friend = document.getElementById("friend");
+          const button = document.getElementById("friendButton");
+
+          var madeFriend = false;
+
+          var previousX = 0;
+
+          button.addEventListener("click", (e) => {
+            if (madeFriend) {
+              friend.style.display = "none";
+              button.textContent = "Make Friend!";
+              madeFriend = false;
+            } else {
+              friend.style.display = "block";
+              button.textContent = "Remove Friend";
+              madeFriend = true;
+            }
+          });
+
+          window.addEventListener("mousemove", (e) => {
+            friend.style.left = `${e.clientX - 50}px`;
+            friend.style.top = `${e.clientY + 20}px`;
+
+            if (e.clientX + 10 < previousX) {
+              friend.src = "images/nautilusFriendLeft.png";
+            }
+
+            if (e.clientX + 10 > previousX) {
+              friend.src = "images/nautilusFriendRight.png";
+            }
+
+            previousX = e.clientX + 10;
+          });
+        </script>
       </div>
       <div class="rightAlign">
         <h4 class="rightAlign">Last Updated:</h4>
